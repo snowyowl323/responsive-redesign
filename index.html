@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <title>Responsive Redesign</title>
+</head>
+
+<body>
+    <nav id="primary-nav">
+        <div id="name-container">
+            <h2 id="name">SnowyOwl323</h2>
+        </div>
+    </nav>
+
+    <div id="hero">
+        <h1 id="page-title">Responsive Redesign</h1>
+    </div>
+
+    <nav id="secondary-nav">
+        <h3 id="jump-to">Jump to:</h3>
+        <div id="section-links">
+            <a class="button-link" href="#overview">
+                <div class="section-link">
+                    <h4 class="section-link-text">0. Overview</h4>
+                </div>
+            </a>
+            <a class="button-link" href="#preparation">
+                <div class="section-link">
+                    <h4 class="section-link-text">1. Problems</h4>
+                </div>
+            </a>
+            <a class="button-link" href="#prototypes">
+                <div class="section-link">
+                    <h4 class="section-link-text">2. Prototypes</h4>
+                </div>
+            </a>
+            <a class="button-link" href="#redesign">
+                <div class="section-link">
+                    <h4 class="section-link-text">3. Final Redesign</h4>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <section id="overview">
+        <div class="content-container">
+            <h2 class="section-header">Part 0: Overview</h2>
+            <p class="description">For this project, I found a website that was hard to use and redesigned it for
+                usability, accessibility, efficiency, and aesthetics. To redesign it, I created a LoFi prototype to plan
+                out rough ideas, a style guide to demonstrate states of elements on my new page, and a HiFi prototype to
+                show what the design would look like once it was finished. Then, I coded the page in HTML, CSS, and
+                Javascript to match the HiFi prototype I designed.</p>
+        </div>
+    </section>
+
+    <section id="preparation">
+        <div class="content-container">
+            <h2 class="section-header">Part 1: Identifying Usability Problems</h2>
+            <p>I chose to redesign the Brown
+                Ballroom Dance Team Website (<a class="text-link" target="_blank"
+                    href="https://students.brown.edu/ballroom-dance-team/">here</a>) because I am on the Brown Ballroom
+                Dance Team and often need to find information related to upcoming events. However, when I go to the
+                website, I can’t find the information I am looking for easily or at all. I wanted to improve the design
+                to help future me!
+            </p>
+            <div class="image-container">
+                <img src="./Brown Ballroom Website.png" alt="The Original Brown Ballroom Website">
+                <div class="caption">A Screenshot of the Original Brown Ballroom Website</div>
+            </div>
+            <p>First, I examined the website for usability issues and then I used <a class="text-link" target="_blank"
+                    href="https://students.brown.edu/ballroom-dance-team/">WebAIM WAVE</a> to analyze the website for
+                accessibility issues.</p>
+
+            <h3 class="section-subheader">Identifying Usability Problems:</h3>
+            <ol>
+                <li>Multiple links to the same places presented concurrently to users.</li>
+                <li>Calendar information is missing, and even when it is present it is presented as a list of times and
+                    not as a calendar.</li>
+                <li>Links take up a lot of the page on mobile.</li>
+                <li>Links at the bottom of the page are dense and hard to navigate.</li>
+                <li>Nav Bar on the left has a lot of information and it's hard to find specific pages.</li>
+                <li>The text hierarchy of navigation links, headers, and text is ok but could be improved.</li>
+                <li>There are too many links on the page. Many of the links lead to pages that are no longer used or
+                    pages that should be sections on other pages.</li>
+                <li>It is hard to remember where to find information based on the nav bar on the left of the page.</li>
+            </ol>
+
+            <h3 class="section-subheader">Identifying Accessibility Problems:</h3>
+            <ol>
+                <li>WebAIM WAVE says that the Brown Ballroom title is low contrast with the background; however, I think
+                    the white on brown is quite easily readable, even in grayscale.</li>
+                <li>I agree that the text in the calendar section is hard to read both because it is nearly the same
+                    color as the background and because some of it is very small.</li>
+                <li>Something that I wouldn't have noticed just looking at the page is that it skips from h2 to h4
+                    headers, ignoring h3.</li>
+                <li>Visited links on the page turn a light tan which is nearly the same color as the background and is
+                    hard to read. WebAIM WAVE doesn't notice this low contrast but I think it is a problem.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="prototypes">
+        <div class="content-container">
+            <h2 class="section-header">Part 2: Visual Redesign</h2>
+            <h3 class="section-subheader">Low-Fidelity Wireframing</h3>
+            <p>First, I created LoFi wireframes for the redesigned website. I annotated the wireframes with the problems
+                that the changes were trying to solve.</p>
+            <iframe class="pdf" src="./LoFi Prototype.pdf" frameborder="0"></iframe>
+
+            <h3 class="section-subheader">Visual Design Style Guide</h3>
+            <p>Next, I created a Visual Design Style Guide to show the dynamic elements of the redesigned page.</p>
+            <div class="image-container">
+                <img src="./Style Guide.png" alt="Visual Design Style Guide">
+                <div class="caption">The Style Guide for my New Ballroom Dance Team Website Design</div>
+            </div>
+
+            <h3 class="section-subheader">High-Fidelity Prototyping</h3>
+            <p>Next, I created high fidelity prototypes of the design on mobile, tablet, and desktop. The left side is
+                the prototype and the right side has annotations which shows some structure and styling through CSS
+                pseudocode. Blue lines connect the CSS to the actual prototype.</p>
+            <h4 class="small-title">Desktop:</h4>
+            <iframe class="pdf" src="./Desktop.pdf" frameborder="0"></iframe>
+            <h4 class="small-title">Tablet and Tablet Dropdown:</h4>
+            <iframe class="pdf" src="./Tablet.pdf" frameborder="0"></iframe>
+            <iframe class="pdf" src="./Tablet Dropdown.pdf" frameborder="0"></iframe>
+            <h4 class="small-title">Phone and Phone Dropdown:</h4>
+            <iframe class="pdf" src="./Phone.pdf" frameborder="0"></iframe>
+            <iframe class="pdf" src="./Phone Dropdown.pdf" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <section id="redesign">
+        <div class="content-container">
+            <h2 class="section-header">Part 3: Responsive Redesign</h2>
+            <p>Finally, I created a new brown ballroom website using HTML, CSS, and a tiny bit of Javascript. The
+                website can be found <a href="https://snowyowl323.github.io/brown-ballroom/" target="_blank">here</a>
+                and is also
+                displayed below for your convenience.
+            </p>
+        </div>
+    </section>
+
+    <div class="subsection">
+        <h2 class="subsection-header">The Website</h2>
+
+        <iframe class="webpage" src="https://snowyowl323.github.io/brown-ballroom/" frameborder="0"></iframe>
+    </div>
+
+    <div class="small-section">
+        <a class="button-link" href="#">
+            <div class="section-link">
+                <h4 class="section-link-text">Back to Top</h4>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
